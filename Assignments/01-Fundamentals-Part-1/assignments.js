@@ -8,7 +8,7 @@ let population = 85             // population in millions
 
 // LECTURE: Data Types
 const isIsland = false;
-const language = "Persian";
+const language = "persian";
 // console.log(typeof isIsland);
 // console.log(typeof population);
 // console.log(typeof country);
@@ -60,3 +60,36 @@ description = `${country} is in ${continent}, and its ${population} million peop
 // } else {
 //     console.log('No borders');
 // }
+
+// LECTURE: Logical Operators
+// if(language==="English" && population < 50 && !isIsland){
+//     console.log(`You should live in ${country} :)`);
+// } else {
+//     console.log(`${country} does not meet your criteria :(`);
+// }
+
+// LECTURE: The switch Statement
+// switch(language){
+//     case 'chinese':
+//     case 'mandarin':
+//         console.log('MOST number of native speakers!');
+//         break;
+//     case 'spanish':
+//         console.log('2nd place in number of native speakers');
+//         break;
+//     case 'english':
+//         console.log('3rd place');
+//         break;
+//     case 'hindi':
+//         console.log('Number 4');
+//         break;
+//     case 'arabic':
+//         console.log('5th most spoken language');
+//         break;
+//     default:
+//         console.log('Great language too :D');
+// }
+
+// LECTURE: The Conditional (Ternary) Operator
+// const str = population > 33 ? 'above' : 'below';
+// console.log(`${country}'s population is ${str} average`);
