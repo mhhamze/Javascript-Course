@@ -43,3 +43,87 @@
 // console.log(percIran);
 // console.log(percChina);
 // console.log(percUSA);
+
+// LECTURE: Introduction to Arrays
+// const populations = [10,1441,85,332]
+// console.log(populations.length === 4);
+// const percentages = [
+//     percentageOfWorld1(populations[0]),
+//     percentageOfWorld1(populations[1]),
+//     percentageOfWorld1(populations[2]),
+//     percentageOfWorld1(populations[3])
+// ];
+// console.log(percentages);
+// LECTURE: Basic Array Operations (Methods)
+// const neighbours = ["Iraq","Afghanistan","Pakistan","Sweden","Armenia","Azerbaijan","Turkey","Turkmenistan"];
+// neighbours.push("Utopia");
+// console.log(neighbours);
+// neighbours.pop();
+// console.log(neighbours);
+// if(!neighbours.includes("Germany")){
+//     console.log("Probably not a central European country :D");
+// }
+// neighbours[neighbours.indexOf('Sweden')] = "Republic of Sweden";
+// console.log(neighbours);
+// LECTURE: Introduction to Objects
+// const myCountry = {
+//     country : "Iran",
+//     capital : "Tehran",
+//     language : "Persian",
+//     population : 85,
+//     neighbours : ["Iraq","Afghanistan","Pakistan","Sweden","Armenia","Azerbaijan","Turkey","Turkmenistan"]
+// };
+// console.log(myCountry);
+// // LECTURE: Dot vs. Bracket Notation
+// console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
+// myCountry.population += 2;
+// console.log(myCountry.population);
+// myCountry['population'] -= 2;
+// console.log(myCountry.population);
+
+// LECTURE: Object Methods
+// const myCountry = {
+//     country : "Iran",
+//     capital : "Tehran",
+//     language : "Persian",
+//     population : 85,
+//     neighbours : ["Iraq","Afghanistan","Pakistan","Sweden","Armenia","Azerbaijan","Turkey","Turkmenistan"],
+//     describe : function(){
+//         console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`);
+//     },
+//     checkIsland : function(){
+//         this.isIsland = this.neighbours.length > 0 ? false : true;
+//     }
+// };
+// myCountry.describe();
+// myCountry.checkIsland();
+// console.log(myCountry);
+
+// LECTURE: Iteration: The for Loop
+// for(let i = 1;i <= 50; i++){
+//     console.log(`voter number ${i} is currently voting`);
+// }
+// LECTURE: Looping Arrays, Breaking and Continuing
+// const populations = [10,1441,85,332]
+// const percentages2 = []
+// for(let i = 0; i < populations.length;i++){
+//     percentages2[i] = percentageOfWorld1(populations[i]);
+// }
+// console.log(percentages2);
+// LECTURE: Looping Backwards and Loops in Loops
+// const listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden',
+// 'Russia']];
+// for(let i = 0;i<listOfNeighbours.length; i++){
+//     for(let j = 0; j<listOfNeighbours[i].length;j++){
+//         console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+//     }
+// }
+// LECTURE: The while Loop
+// const percentages3 = [];
+// let i = 0;
+// while (i < populations.length) {
+// const perc = percentageOfWorld1(populations[i]);
+// percentages3.push(perc);
+// i++;
+// }
+// console.log(percentages3);
